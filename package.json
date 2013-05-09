@@ -1,7 +1,7 @@
 {
   "name": "valuechecker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Easy extendable method collection for asserting values on runtime",
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive"
