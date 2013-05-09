@@ -1,7 +1,6 @@
 # Simple example
 
-    var philfw = require('philfw'),
-        VC = philfw.ValueChecker; // shortening :-)
+    var VC = require('valuechecker');
 
     /**
      * This method demonstrates the ValueChecker interface.
