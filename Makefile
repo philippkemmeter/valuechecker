@@ -15,7 +15,7 @@ testcovhtml: coverage.html
 testcovjs: coverage.json
 
 coverage.html coverage.json: $(COVOBJDIR) 
-	MVCFUN_COV=1 $(MAKE) test REPORTER=$(subst coverage.,,$@)-cov > $@
+	VALUECHECKER_COV=1 $(MAKE) test REPORTER=$(subst coverage.,,$@)-cov > $@
 $(COVOBJDIR): $(SRCDIR) $(TESTDIR)
 	$(MAKE) cleancov && jscoverage $(SRCDIR) $(COVOBJDIR)
 
