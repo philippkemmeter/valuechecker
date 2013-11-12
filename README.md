@@ -1,4 +1,6 @@
-# Simple example
+# Runtime checks made easy
+
+## Example
 
     // This line is for NodeJS. In browser, you just have to the JS-File
     // using <script src="..." type="text/javascript"></script>
@@ -17,12 +19,12 @@
         cool_obj = VC.instance_of(cool_obj, "cool_obj", CoolObj);
     };
 
-
+## Explanation
 
 The ValueChecker methods checks the given value for the type and additional
 criteria you want to check. If it does not match, an exception is thrown telling
 exactly what has happend (e.g. type mismatch or string is too short etc). If it
-does match, the value to check is returned `casted to the type you wanted`.
-Therefore if you pass for instance the string `"2"` to `VC.int`, then it will 
-pass the test an the int value `2` will be returend. Because "2" is lossless
+does match, the value to check is returned *casted to the type you wanted*.
+Therefore if you pass for instance the string `"2"` to `VC.int`, it will pass
+the test and the int value `2` will be returend. Because "2" is lossless
 convertable to an int.
