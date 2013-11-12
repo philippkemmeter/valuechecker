@@ -1,5 +1,7 @@
 # Simple example
 
+    // This line is for NodeJS. In browser, you just have to the JS-File
+    // using <script src="..." type="text/javascript"></script>
     var VC = require('valuechecker');
 
     /**
@@ -14,6 +16,7 @@
         an_int = VC.int(an_int, "an_int");
         cool_obj = VC.instance_of(cool_obj, "cool_obj", CoolObj);
     };
+
 
 
 The ValueChecker methods checks the given value for the type and additional
